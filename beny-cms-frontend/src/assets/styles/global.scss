@@ -1,0 +1,18 @@
+@use "mixins" as *;
+@use "variables" as *;
+@use "reset";
+
+body {
+  min-width: 380px;
+  position: relative;
+  overflow-x: hidden;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-family: $default-font;
+}
+
+.container {
+  max-width: $view-port-xxl;
+  margin: 0 auto;
+  padding: 0 clamp($spacing-2, 2%, $spacing-4);
+}
