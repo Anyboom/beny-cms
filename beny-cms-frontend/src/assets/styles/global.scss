@@ -8,10 +8,15 @@ body {
   font-size: $font-size;
   line-height: $line-height;
   font-family: $default-font;
+  height: 100dvh;
 }
 
 .container {
   max-width: $view-port-xxl;
   margin: 0 auto;
   padding: 0 clamp($spacing-2, 2%, $spacing-4);
+}
+
+#__nuxt {
+  height: 100%;
 }
