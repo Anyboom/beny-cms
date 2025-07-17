@@ -14,6 +14,12 @@ export default defineConfig([
   tseslint.configs.recommended,
   prettier,
   pluginVue.configs["flat/essential"],
+  {
+    files: ["**/*.vue"],
+    rules: {
+      "vue/multi-word-component-names": "off",
+    },
+  },
   { files: ["**/*.vue"], languageOptions: { parserOptions: { parser: tseslint.parser } } },
   { files: ["**/*.css"], plugins: { css }, language: "css/css", extends: ["css/recommended"] },
 ]);
