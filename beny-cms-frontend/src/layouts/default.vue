@@ -20,6 +20,7 @@
       background: $color-whisper;
       border-radius: $spacing-3;
       padding: 0 $spacing-3;
+      overflow: auto;
     }
   }
 </style>

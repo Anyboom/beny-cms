@@ -1,18 +1,29 @@
+@use "sass:color";
+
 // https://www.htmlcsscolor.com/
 
 // -------------------------------------------
 
 $color-fun-blue: #294985;
-$color-white: #FFFFF;
+$color-white: #FFFFFF;
 $color-ebony: #2C303C;
 $color-whisper: #EDEDED;
 
 // -------------------------------------------
 
 $color-accent: $color-fun-blue;
+$color-accent-hover: color.adjust($color-accent, $blackness: 10%);
+
+$color-text: $color-ebony;
+$color-text-hover: color.adjust($color-text, $blackness: 10%);
 
 $color-default-white: $color-white;
 $color-default-black: $color-ebony;
+
+// -------------------------------------------
+
+$time-function-default: ease;
+$transition-default: 0.2s $time-function-default;
 
 // -------------------------------------------
 
@@ -29,6 +40,8 @@ $spacing-3: $spacing-base * 3;
 $spacing-4: $spacing-base * 4;
 $spacing-5: $spacing-base * 5;
 $spacing-6: $spacing-base * 6;
+$spacing-7: $spacing-base * 7;
+$spacing-8: $spacing-base * 8;
 
 // -------------------------------------------
 

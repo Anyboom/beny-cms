@@ -1,5 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  import { AppHeader } from "~/widgets/header";
+</script>
 
-<template>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, repudiandae?</template>
+<template>
+  <AppHeader />
+</template>
 
 <style scoped></style>

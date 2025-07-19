@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-  max-width: $view-port-xxl;
+  max-width: $view-port-lg;
   margin: 0 auto;
   padding: 0 clamp($spacing-2, 2%, $spacing-4);
 }
