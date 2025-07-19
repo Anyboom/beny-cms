@@ -18,6 +18,8 @@ $color-text: $color-ebony;
 $color-text-hover: color.adjust($color-text, $blackness: 10%);
 
 $color-default-white: $color-white;
+$color-default-white-hover: color.adjust($color-default-white, $blackness: 5%);
+
 $color-default-black: $color-ebony;
 
 // -------------------------------------------
