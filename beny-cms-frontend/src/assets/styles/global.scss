@@ -20,3 +20,8 @@ body {
 #__nuxt {
   height: 100%;
 }
+
+::selection {
+  background: $color-accent;
+  color: $color-white;
+}
