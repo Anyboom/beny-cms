@@ -13,7 +13,7 @@
 
   .default-layout {
     height: 100%;
-    padding: $spacing-3;
+    padding: $spacing-2;
     background: $color-accent;
 
     &__wrapper {
