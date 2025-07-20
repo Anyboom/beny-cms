@@ -3,6 +3,7 @@
   import { WhyTrustUs } from "~/widgets/why-trust-us";
   import { ClickBait } from "~/widgets/click-bait";
   import { OftenAsk } from "~/widgets/ofter-ask";
+  import { AbousUs } from "~/widgets/abous-us";
 </script>
 
 <template>
@@ -10,6 +11,7 @@
   <WhyTrustUs />
   <ClickBait />
   <OftenAsk />
+  <AbousUs />
 </template>
 
 <style scoped></style>
