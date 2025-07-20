@@ -5,10 +5,12 @@
   import { OftenAsk } from "~/widgets/ofter-ask";
   import { AboutUs } from "~/widgets/abous-us";
   import { HalfStats } from "~/widgets/half-stats";
+  import { MainBanner } from "~/widgets/main-banner";
 </script>
 
 <template>
   <AppHeader />
+  <MainBanner />
   <WhyTrustUs />
   <ClickBait />
   <OftenAsk />
