@@ -1,1 +1,1 @@
-export { default as AbousUs } from "./ui/AbousUs.vue";
+export { default as AboutUs } from "./ui/AboutUs.vue";
