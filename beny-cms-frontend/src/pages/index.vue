@@ -4,6 +4,7 @@
   import { ClickBait } from "~/widgets/click-bait";
   import { OftenAsk } from "~/widgets/ofter-ask";
   import { AbousUs } from "~/widgets/abous-us";
+  import { HalfStats } from "~/widgets/half-stats";
 </script>
 
 <template>
@@ -12,6 +13,7 @@
   <ClickBait />
   <OftenAsk />
   <AbousUs />
+  <HalfStats />
 </template>
 
 <style scoped></style>
