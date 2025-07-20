@@ -45,6 +45,7 @@
     &__wrapper {
       border-radius: $spacing-2;
       overflow: hidden;
+      border: 1px solid #eeeeee;
     }
 
     &__status {
