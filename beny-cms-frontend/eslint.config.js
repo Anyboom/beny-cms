@@ -8,8 +8,15 @@ import prettier from "eslint-config-prettier/flat";
 import sonarjs from "eslint-plugin-sonarjs";
 
 export default defineConfig([
-  { files: ["**/*.{js,mjs,cjs,ts,mts,cts,vue}"], plugins: { js }, extends: ["js/recommended"] },
-  { files: ["**/*.{js,mjs,cjs,ts,mts,cts,vue}"], languageOptions: { globals: globals.browser } },
+  {
+    files: ["**/*.{js,mjs,cjs,ts,mts,cts,vue}"],
+    plugins: { js },
+    extends: ["js/recommended"],
+  },
+  {
+    files: ["**/*.{js,mjs,cjs,ts,mts,cts,vue}"],
+    languageOptions: { globals: globals.browser },
+  },
   sonarjs.configs.recommended,
   tseslint.configs.recommended,
   prettier,
@@ -20,6 +27,14 @@ export default defineConfig([
       "vue/multi-word-component-names": "off",
     },
   },
-  { files: ["**/*.vue"], languageOptions: { parserOptions: { parser: tseslint.parser } } },
-  { files: ["**/*.css"], plugins: { css }, language: "css/css", extends: ["css/recommended"] },
+  {
+    files: ["**/*.vue"],
+    languageOptions: { parserOptions: { parser: tseslint.parser } },
+  },
+  {
+    files: ["**/*.css"],
+    plugins: { css },
+    language: "css/css",
+    extends: ["css/recommended"],
+  },
 ]);

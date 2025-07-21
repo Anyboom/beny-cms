@@ -6,11 +6,13 @@
   import { AboutUs } from "../widgets/about-us";
   import { HalfStats } from "~/widgets/half-stats";
   import { MainBanner } from "~/widgets/main-banner";
+  import { PersonalForecast } from "~/widgets/personal-forecast";
 </script>
 
 <template>
   <AppHeader />
   <MainBanner />
+  <PersonalForecast />
   <WhyTrustUs />
   <ClickBait />
   <OftenAsk />
