@@ -12,12 +12,12 @@
 <template>
   <AppHeader />
   <MainBanner />
-  <PersonalForecast />
+  <AboutUs />
   <WhyTrustUs />
+  <HalfStats />
   <ClickBait />
   <OftenAsk />
-  <AboutUs />
-  <HalfStats />
+  <PersonalForecast />
 </template>
 
 <style scoped></style>
