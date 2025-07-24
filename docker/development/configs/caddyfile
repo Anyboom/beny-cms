@@ -1,0 +1,19 @@
+localhost {
+    reverse_proxy beny-cms-frontend:3000
+}
+
+directus.localhost {
+    reverse_proxy beny-cms-backend:8055
+
+    handle /websocket {
+        reverse_proxy beny-cms-backend:8055 {
+            transport http {
+                keepalive 30s
+            }
+        }
+    }
+
+    request_body {
+        max_size 1GB
+    }
+}

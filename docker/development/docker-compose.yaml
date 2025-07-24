@@ -1,0 +1,44 @@
+version: "3.7"
+name: "beny-cms"
+
+services:
+  beny-cms-backend:
+    image: directus/directus:11.5.1
+    ports:
+      - "8055:8055"
+    volumes:
+      - ../../beny-cms-backend/database:/directus/database
+      - ../../beny-cms-backend/uploads:/directus/uploads
+      - ../../beny-cms-backend/extensions:/directus/extensions
+    environment:
+      SECRET: "replace-with-random-value"
+      ADMIN_EMAIL: "admin@example.com"
+      ADMIN_PASSWORD: "d1r3ctu5"
+      DB_CLIENT: "sqlite3"
+      DB_FILENAME: "/directus/database/data.db"
+      WEBSOCKETS_ENABLED: "true"
+  beny-cms-caddy:
+    container_name: beny-cms-caddy
+    image: caddy:2.7.4
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    cap_add:
+      - NET_ADMIN
+    volumes:
+      - ./configs/caddyfile:/etc/caddy/Caddyfile
+    depends_on:
+      - beny-cms-frontend
+  beny-cms-frontend:
+    image: oven/bun:1.1.45
+    container_name: beny-cms-frontend
+    working_dir: /usr/src/app
+    volumes:
+      - ../../beny-cms-frontend:/usr/src/app
+    ports:
+      - "3000:3000"
+    command: ["sh", "-c", "bun install && bun run dev"]
+
+volumes:
+  beny-cms-postgres-data:
