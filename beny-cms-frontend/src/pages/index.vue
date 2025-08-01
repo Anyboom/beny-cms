@@ -3,7 +3,7 @@
   import { WhyTrustUs } from "~/widgets/why-trust-us";
   import { ClickBait } from "~/widgets/click-bait";
   import { OftenAsk } from "~/widgets/ofter-ask";
-  import { AboutUs } from "../widgets/about-us";
+  import { AboutUs } from "~/widgets/about-us";
   import { HalfStats } from "~/widgets/half-stats";
   import { MainBanner } from "~/widgets/main-banner";
   import { PersonalForecast } from "~/widgets/personal-forecast";

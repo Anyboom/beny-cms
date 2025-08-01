@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
+
   devServer: {
     host: "0.0.0.0",
     port: 3000,
@@ -8,12 +9,15 @@ export default defineNuxtConfig({
 
   devtools: { enabled: true },
 
+  typescript: {
+    typeCheck: true,
+  },
+
   imports: {
     autoImport: false,
   },
 
   srcDir: "./src",
-
   css: ["@/assets/styles/global.scss"],
 
   app: {
@@ -29,4 +33,8 @@ export default defineNuxtConfig({
       viewport: "width=device-width, initial-scale=1",
     },
   },
+
+  modules: ["nuxt-directus"],
+
+  runtimeConfig: { public: { directus: { url: "https://directus.localhost" } } },
 });

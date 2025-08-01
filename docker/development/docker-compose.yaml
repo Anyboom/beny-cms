@@ -3,6 +3,7 @@ name: "beny-cms"
 
 services:
   beny-cms-backend:
+    container_name: beny-cms-backend
     image: directus/directus:11.5.1
     ports:
       - "8055:8055"
@@ -27,7 +28,7 @@ services:
     cap_add:
       - NET_ADMIN
     volumes:
-      - ./configs/caddyfile:/etc/caddy/Caddyfile
+      - ./configs/Caddyfile:/etc/caddy/Caddyfile
     depends_on:
       - beny-cms-frontend
   beny-cms-frontend:
