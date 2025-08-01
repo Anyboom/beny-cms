@@ -34,7 +34,7 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["nuxt-directus"],
+  modules: ["nuxt-directus", "@nuxt/icon"],
 
   runtimeConfig: { public: { directus: { url: "https://directus.localhost" } } },
 });
