@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="about-us">
+  <section class="about-us">
     <div class="container">
       <div class="about-us__wrapper">
         <div class="about-us__content">
@@ -28,7 +28,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped lang="scss">

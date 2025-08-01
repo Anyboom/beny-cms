@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="personal-forecast">
+  <section class="personal-forecast">
     <div class="container">
       <div class="personal-forecast__wrapper">
         <div class="personal-forecast__content">
@@ -22,7 +22,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped lang="scss">
