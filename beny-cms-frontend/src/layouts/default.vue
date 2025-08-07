@@ -8,6 +8,14 @@
   </div>
 </template>
 
+<style lang="scss">
+  @use "@/assets/styles/variables" as *;
+
+  body:has(.default-layout) {
+    background: $color-accent;
+  }
+</style>
+
 <style scoped lang="scss">
   @use "@/assets/styles/variables" as *;
 
