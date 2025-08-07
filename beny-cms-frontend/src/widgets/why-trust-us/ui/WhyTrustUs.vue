@@ -38,6 +38,7 @@
 <style scoped lang="scss">
   @use "@/assets/styles/typography" as *;
   @use "@/assets/styles/variables" as *;
+  @use "@/assets/styles/mixins" as *;
 
   .why-trust-us {
     margin-bottom: $spacing-8;
@@ -57,6 +58,14 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: $spacing-3;
+
+      @include view-port-sm {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include view-port-xs {
+        grid-template-columns: repeat(1, 1fr);
+      }
     }
 
     &__card-title {
