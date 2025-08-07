@@ -106,11 +106,6 @@
         right: 15%;
         top: 33%;
       }
-
-      @include hover {
-        z-index: 1000;
-        transform: scale(1.1);
-      }
     }
   }
 </style>

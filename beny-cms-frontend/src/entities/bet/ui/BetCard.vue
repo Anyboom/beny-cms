@@ -86,7 +86,7 @@
     &__image {
       height: 100px;
 
-      background-image: url("@/assets/images/background__card.png");
+      background-image: url("~/assets/images/bet-card__background.svg");
     }
   }
 </style>
