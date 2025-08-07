@@ -34,6 +34,7 @@
 <style scoped lang="scss">
   @use "@/assets/styles/variables" as *;
   @use "@/assets/styles/typography" as *;
+  @use "@/assets/styles/mixins" as *;
 
   .about-us {
     margin-bottom: $spacing-8;
@@ -51,6 +52,10 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: $spacing-2;
+
+      @include view-port-sm {
+        display: block;
+      }
     }
 
     &__icon {
@@ -74,6 +79,12 @@
       align-items: center;
       justify-content: center;
       height: 100%;
+    }
+
+    &__image-wrapper {
+      @include view-port-sm {
+        display: none;
+      }
     }
   }
 </style>
