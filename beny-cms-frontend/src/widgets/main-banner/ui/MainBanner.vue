@@ -64,9 +64,17 @@
     &__wrapper {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+
+      @include view-port-md {
+        display: block;
+      }
     }
     &__content {
       padding: $spacing-8 * 2 0;
+
+      @include view-port-md {
+        padding: $spacing-8 0;
+      }
     }
     &__title {
       font-size: 60px;
@@ -75,11 +83,19 @@
       line-height: 60px;
       margin-bottom: $spacing-5;
       max-width: 540px;
+
+      @include view-port-md {
+        max-width: none;
+      }
     }
     &__cards {
       display: flex;
       justify-content: right;
       align-items: center;
+
+      @include view-port-md {
+        display: none;
+      }
     }
     &__cards-wrapper {
       position: relative;
