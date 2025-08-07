@@ -79,7 +79,7 @@
 </script>
 
 <template>
-  <section class="half-stats">
+  <section class="half-stats" id="half-stats">
     <div class="container">
       <div class="half-stats__wrapper">
         <h2 class="half-stats__title">Статистика</h2>

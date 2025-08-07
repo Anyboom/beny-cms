@@ -1,6 +1,11 @@
 @use "variables" as *;
 @use "reset";
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 20px;
+}
+
 body {
   min-width: 380px;
   position: relative;

@@ -16,7 +16,7 @@
 </script>
 
 <template>
-  <section class="why-trust-us">
+  <section class="why-trust-us" id="why-trust-us">
     <div class="container">
       <div class="why-trust-us__wrapper">
         <h2 class="why-trust-us__title">Почему нам доверяют</h2>

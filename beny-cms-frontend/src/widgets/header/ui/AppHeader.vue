@@ -11,23 +11,23 @@
 
   const items = [
     {
-      link: "/",
+      link: "#about-us",
       value: "О нас",
     },
     {
-      link: "/",
+      link: "#why-trust-us",
       value: "Почему нам доверяют",
     },
     {
-      link: "/",
+      link: "#half-stats",
       value: "Статистика",
     },
     {
-      link: "/",
+      link: "#often-ask",
       value: "Часто спрашивают",
     },
     {
-      link: "/",
+      link: "#personal-forecast",
       value: "Индивидуальный прогноз",
     },
   ];
@@ -42,7 +42,7 @@
         </a>
         <div class="header__nav-wrapper">
           <nav class="header__nav" :class="{ 'header__nav--open': isVisibleMobileMenu }">
-            <a class="header__nav-item" :href="item.link" v-for="item in items" :key="item.value">
+            <a class="header__nav-item" @click="toggleMenu" :href="item.link" v-for="item in items" :key="item.value">
               {{ item.value }}
             </a>
           </nav>

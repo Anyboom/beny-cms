@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <section class="personal-forecast">
+  <section class="personal-forecast" id="personal-forecast">
     <div class="container">
       <div class="personal-forecast__wrapper">
         <div class="personal-forecast__content">

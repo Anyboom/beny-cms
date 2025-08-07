@@ -30,7 +30,7 @@
 </script>
 
 <template>
-  <section class="often-ask">
+  <section class="often-ask" id="often-ask">
     <div class="container">
       <div class="often-ask__wrapper">
         <h2 class="often-ask__title">Часто спрашивают</h2>

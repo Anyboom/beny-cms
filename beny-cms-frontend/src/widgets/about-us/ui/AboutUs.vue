@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <section class="about-us">
+  <section class="about-us" id="about-us">
     <div class="container">
       <div class="about-us__wrapper">
         <div class="about-us__content">
