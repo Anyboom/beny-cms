@@ -28,6 +28,7 @@
 <style scoped lang="scss">
   @use "@/assets/styles/variables" as *;
   @use "@/assets/styles/typography" as *;
+  @use "@/assets/styles/mixins" as *;
 
   .personal-forecast {
     margin-bottom: $spacing-8;
@@ -41,6 +42,10 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: $spacing-2;
+
+      @include view-port-md {
+        grid-template-columns: repeat(1, 1fr);
+      }
     }
 
     &__paragraph {
