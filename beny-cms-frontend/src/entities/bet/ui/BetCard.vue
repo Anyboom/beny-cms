@@ -87,6 +87,7 @@
       height: 100px;
 
       background-image: url("~/assets/images/bet-card__background.svg");
+      background-size: cover;
     }
   }
 </style>

@@ -97,6 +97,7 @@
 <style scoped lang="scss">
   @use "@/assets/styles/typography" as *;
   @use "@/assets/styles/variables" as *;
+  @use "@/assets/styles/mixins" as *;
 
   .half-stats {
     margin-bottom: $spacing-8;
@@ -111,6 +112,18 @@
       grid-template-columns: repeat(4, 1fr);
       gap: $spacing-2;
       margin-bottom: $spacing-2;
+
+      @include view-port-md {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @include view-port-sm {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include view-port-xs {
+        grid-template-columns: repeat(1, 1fr);
+      }
     }
 
     &__buttons {
