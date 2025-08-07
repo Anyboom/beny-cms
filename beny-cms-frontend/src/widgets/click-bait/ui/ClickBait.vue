@@ -15,9 +15,14 @@
 
 <style scoped lang="scss">
   @use "@/assets/styles/variables" as *;
+  @use "@/assets/styles/mixins" as *;
 
   .click-bait {
     margin-bottom: $spacing-8;
+
+    @include view-port-xs {
+      display: none;
+    }
     &__wrapper {
       background: $color-default-white;
       border-radius: $spacing-2;
