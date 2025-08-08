@@ -9,6 +9,10 @@
     isVisibleMobileMenu.value = !isVisibleMobileMenu.value;
   }
 
+  function closeMenu() {
+    isVisibleMobileMenu.value = false;
+  }
+
   const items = [
     {
       link: "#about-us",
@@ -42,7 +46,7 @@
         </a>
         <div class="header__nav-wrapper">
           <nav class="header__nav" :class="{ 'header__nav--open': isVisibleMobileMenu }">
-            <a class="header__nav-item" @click="toggleMenu" :href="item.link" v-for="item in items" :key="item.value">
+            <a class="header__nav-item" @click="closeMenu" :href="item.link" v-for="item in items" :key="item.value">
               {{ item.value }}
             </a>
           </nav>
