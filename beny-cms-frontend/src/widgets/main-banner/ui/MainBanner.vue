@@ -4,6 +4,7 @@
 
   const items: BetEntity[] = [
     {
+      id: "1",
       coefficient: "1, 85",
       competition: "Лига Наций",
       startedAt: "22:00 | 4 июня 2025",
@@ -13,19 +14,21 @@
       forecast: "ИТБ 1 ( 1.5 )",
     },
     {
+      id: "1",
       coefficient: "1, 85",
       competition: "Лига Наций",
       startedAt: "22:00 | 4 июня 2025",
-      status: "win",
+      status: "return",
       guestTeam: "Германия",
       homeTeam: "Россия",
       forecast: "ИТБ 1 ( 1.5 )",
     },
     {
+      id: "1",
       coefficient: "1, 85",
       competition: "Лига Наций",
       startedAt: "22:00 | 4 июня 2025",
-      status: "win",
+      status: "lose",
       guestTeam: "Германия",
       homeTeam: "Россия",
       forecast: "ИТБ 1 ( 1.5 )",

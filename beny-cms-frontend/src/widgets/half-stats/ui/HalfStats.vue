@@ -4,6 +4,7 @@
 
   const items: BetEntity[] = [
     {
+      id: "1",
       coefficient: "1, 85",
       competition: "Лига Наций",
       startedAt: "22:00 | 4 июня 2025",
@@ -13,6 +14,7 @@
       forecast: "ИТБ 1 ( 1.5 )",
     },
     {
+      id: "1",
       coefficient: "1, 85",
       competition: "Лига Наций",
       startedAt: "22:00 | 4 июня 2025",
@@ -22,6 +24,7 @@
       forecast: "ИТБ 1 ( 1.5 )",
     },
     {
+      id: "1",
       coefficient: "1, 85",
       competition: "Лига Наций",
       startedAt: "22:00 | 4 июня 2025",
@@ -31,6 +34,7 @@
       forecast: "ИТБ 1 ( 1.5 )",
     },
     {
+      id: "1",
       coefficient: "1, 85",
       competition: "Лига Наций",
       startedAt: "22:00 | 4 июня 2025",
@@ -40,6 +44,7 @@
       forecast: "ИТБ 1 ( 1.5 )",
     },
     {
+      id: "1",
       coefficient: "1, 85",
       competition: "Лига Наций",
       startedAt: "22:00 | 4 июня 2025",
@@ -49,6 +54,7 @@
       forecast: "ИТБ 1 ( 1.5 )",
     },
     {
+      id: "1",
       coefficient: "1, 85",
       competition: "Лига Наций",
       startedAt: "22:00 | 4 июня 2025",
@@ -58,6 +64,7 @@
       forecast: "ИТБ 1 ( 1.5 )",
     },
     {
+      id: "1",
       coefficient: "1, 85",
       competition: "Лига Наций",
       startedAt: "22:00 | 4 июня 2025",
@@ -67,6 +74,7 @@
       forecast: "ИТБ 1 ( 1.5 )",
     },
     {
+      id: "1",
       coefficient: "1, 85",
       competition: "Лига Наций",
       startedAt: "22:00 | 4 июня 2025",
