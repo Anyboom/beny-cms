@@ -34,7 +34,12 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["nuxt-directus", "@nuxt/icon"],
+  modules: ["nuxt-directus", "@nuxt/icon", "dayjs-nuxt"],
+
+  dayjs: {
+    locales: ["ru"],
+    defaultLocale: "ru",
+  },
 
   runtimeConfig: { public: { directus: { url: "https://directus.localhost" } } },
 });
