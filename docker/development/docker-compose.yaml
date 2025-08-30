@@ -21,6 +21,7 @@ services:
       CORS_ENABLED: "true"
       CORS_ORIGIN: "true"
       CONTENT_SECURITY_POLICY_DIRECTIVES__FRAME_SRC: "array:'self',blob:,https://*"
+      EXTENSIONS_AUTO_RELOAD: true
   beny-cms-caddy:
     container_name: beny-cms-caddy
     image: caddy:2.7.4
