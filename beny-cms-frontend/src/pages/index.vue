@@ -7,6 +7,7 @@
   import { HalfStats } from "~/widgets/half-stats";
   import { MainBanner } from "~/widgets/main-banner";
   import { PersonalForecast } from "~/widgets/personal-forecast";
+  import { AppFooter } from "~/widgets/footer";
 </script>
 
 <template>
@@ -18,6 +19,7 @@
   <ClickBait />
   <OftenAsk />
   <PersonalForecast />
+  <AppFooter />
 </template>
 
 <style scoped></style>
